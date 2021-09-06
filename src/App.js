@@ -43,14 +43,14 @@ export default function App() {
 
       ethereum.on("chainChanged", (chainId) => {
         // Only Rinkeby
-        if(chainId != 4) {
+        if(chainId !== 4) {
           alert("Please switch to the Rinkeby network to use the webapp.");
         }
       })
 
       ethereum.on("accountsChanged", (accounts) => {
 
-        if(accounts.length == 0) {
+        if(accounts.length === 0) {
           setCurrentAccount('')
         } else {
           const account = accounts[0];
@@ -158,6 +158,10 @@ export default function App() {
 
             : (
               <div className="flex flex-col justify-center">
+
+                <p className="text-2xl text-center font-black text-gray-900 py-8">
+                  Mint NFT.
+                </p>
                 
                 <label htmlFor="metadata-uri">
                   Paste the metadata URI here.
