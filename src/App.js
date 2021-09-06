@@ -20,7 +20,7 @@ export default function App() {
   const [nftDerivedFromId, setNftDerivedFromId] = React.useState(0);
 
   // Contract variables
-  const contractAddress = "0x08fE631a040E98e13463fA3A263C14D420bB0123"
+  const contractAddress = "0x2795d6a72c6b93BC4264dA368dCD49405033EDa9"
   const contractABI = abi;
 
   // Initialize listeners and check if already connected to Metamask.
